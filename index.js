@@ -30,7 +30,7 @@ var gulpfileGenerator = module.exports = generators.Base.extend({
     }], function (answers) {
       _.assign(self.vars, answers);
       config.opts.forEach(function (opt) {
-        self.vars[opt.value] = self.vars.opts.indexOf(opt.value) !== -1 ? true : false;
+        self.vars[opt.value] = self.vars.opts && self.vars.opts.indexOf(opt.value) !== -1 ? true : false;
       });
       done();
     });

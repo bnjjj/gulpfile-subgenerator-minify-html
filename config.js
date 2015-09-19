@@ -1,10 +1,6 @@
 'use strict';
 module.exports = {
   opts: [{
-    value: 'comments',
-    name: 'comments',
-    checked: true
-  }, {
     value: 'spare',
     name: 'spare',
     checked: false
@@ -19,6 +15,10 @@ module.exports = {
   }, {
     value: 'cdata',
     name: 'cdata',
+    checked: false
+  }, {
+    value: 'comments',
+    name: 'comments',
     checked: false
   }, {
     value: 'quotes',

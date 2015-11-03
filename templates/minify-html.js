@@ -19,5 +19,6 @@ gulp.task('minify-html', function () {
 });
 
 gulp.task('minify-html:watch', function () {
+  gulp.start('minify-html');
   gulp.watch('<%= src %>', ['minify-html']);
 });
